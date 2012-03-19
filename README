@@ -9,8 +9,23 @@ This script update the persian page of wikipedia stats in wikimedia.
 
 == How to run
 run below command in bash:
- 
+
  ./update_wikipedia_stat.rb -n 'USERNAME' -p 'PASSWORD' -u http://meta.wikimedia.org/w/api.php
 
 
+## LICENSE
+Scripts that help to improve wikimedia projects such as wikipedia, wiktionary and etc.
+    Copyright (C) 2012  Hamed Ramezanian
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
