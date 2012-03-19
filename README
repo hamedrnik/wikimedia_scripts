@@ -1,0 +1,14 @@
+==update_wikipedia_stat.rb==
+This script update the persian page of wikipedia stats in wikimedia.
+
+===Requirements===
+* ruby
+* rubygems
+* mediawiki-gateway
+* language_name.rb
+
+===How to run===
+./update_wikipedia_stat.rb -n 'USERNAME' -p 'PASSWORD' -u http://meta.wikimedia.org/w/api.php
+
+
+
