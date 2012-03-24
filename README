@@ -1,5 +1,5 @@
-= update_wikipedia_stat.rb
-This script update the persian page of wikipedia stats in wikimedia.
+= update_*_stat.rb
+These scripts update the persian page of wikis stats in wikimedia.
 
 == Requirements
 * ruby
@@ -10,7 +10,16 @@ This script update the persian page of wikipedia stats in wikimedia.
 == How to run
 run below command in bash:
 
- ./update_wikipedia_stat.rb -n 'USERNAME' -p 'PASSWORD' -u http://meta.wikimedia.org/w/api.php
+ $ update_*_stat.rb -n 'USERNAME' -p 'PASSWORD' -u http://meta.wikimedia.org/w/api.php
+
+**note: The asterisk mark could be the following:
+ # wikibooks
+ # wikimedia
+ # wikinews
+ # wikipedia
+ # wikiquote
+ # wikisource
+ # wiktionary
 
 
 ## LICENSE
