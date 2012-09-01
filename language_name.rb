@@ -197,4 +197,7 @@ def gsub_english_name_to_persian(s)
   s.gsub!(/\[\[w:(Sesotho language\|Sesotho)\]\]/i, '[[w:fa:زبان سوتو|سوتو]]')
   s.gsub!(/\[\[w:(Southern Sotho language\|Southern Sotho)\]\]/i, '[[w:fa:زبان سوتو|سوتو]]')
   s.gsub!(/\[\[w:(Raeto Romance language\|Raeto Romance)\]\]/i, '[[w:fa:زبان رتی-رومانی|رتی-رومانی]]')
+  s.gsub!(/\[\[w:(Simple English language\|Simple English)\]\]/i, '[[w:fa:زبان انگلیسی ساده|انگلیسی ساده]]')
+  s.gsub!(/\[\[w:(Bishnupriya Manipuri language\|Bishnupriya Manipuri)\]\]/i, '[[w:fa:زبان مانیپوری|مانیپوری]]')
+  s.gsub!(/\[\[w:(Cantonese language\|Cantonese)\]\]/i, '[[w:fa:زبان کانتونی معیار|کانتونی معیار]]')
 end
