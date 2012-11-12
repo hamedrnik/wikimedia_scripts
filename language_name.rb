@@ -1,3 +1,5 @@
+#encoding: utf-8
+
 def gsub_english_name_to_persian(s)
   s.gsub!(/\[\[w:(English language\|English)\]\]/i, '[[w:fa:زبان انگلیسی|انگلیسی]]')
   s.gsub!(/\[\[w:(German language\|German)\]\]/i, '[[w:fa:زبان آلمانی|آلمانی]]')
@@ -189,7 +191,7 @@ def gsub_english_name_to_persian(s)
   s.gsub!(/\[\[w:(West Flemish language\|West Flemish)\]\]/i, '[[w:fa:زبان فلاندری غربی|فلاندری غربی]]')
   s.gsub!(/\[\[w:(Wu language\|Wu)\]\]/i, '[[w:fa:زبان وو|وو]]')
   s.gsub!(/\[\[w:(Zeelandic language\|Zeelandic)\]\]/i, '[[w:fa:زبان زیلاندی|زیلاندی]]')
-  s.gsub!(/\[\[w:(Franco\-Proven\çal\/Arpitan language\|Franco\-Proven\çal\/Arpitan)\]\]/i, '[[w:fa:زبان آرپیتان|آرپیتان]]')
+  s.gsub!(/\[\[w:(Franco\-Provençal\/Arpitan language\|Franco\-Provençal\/Arpitan)\]\]/i, '[[w:fa:زبان آرپیتان|آرپیتان]]')
   s.gsub!(/\[\[w:(Saterland Frisian language\|Saterland Frisian)\]\]/i, '[[w:fa:زبان فریسی ساترلند|فریسی ساترلند]]')
   s.gsub!(/\[\[w:(North Frisian language\|North Frisian)\]\]/i, '[[w:fa:زبان فریسی شمالی|فریسی شمالی]]')
   s.gsub!(/\[\[w:(Bambara language\|Bambara)\]\]/i, '[[w:fa:زبان بامبارایی|بامبارایی]]')

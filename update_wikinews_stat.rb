@@ -1,20 +1,22 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
+#encoding: utf-8
 
 require 'net/http'
 require 'rubygems'
 require 'media_wiki'
-require './language_name.rb'
+require File.expand_path('../language_name', __FILE__)
 
 headers =  {
-            'User-agent'=>'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)'
+            'User-agent'=>'update_stats/0.5beta (http://iCEAGE.github.com/wikimedia_scripts/; wikimedia_scripts@example.com)'
         }
-url = URI.parse('http://s23.org/wikistats/wikinews_wiki')
-req = Net::HTTP::Get.new(url.path,headers)
-res = Net::HTTP.start(url.host, url.port) {|http|
-  http.request(req)
-}
+uri = URI('http://wikistats.wmflabs.org/displayw.php?t=wn')
+request = Net::HTTP::Get.new uri.request_uri, headers
 
-statistics = res.body
+res = Net::HTTP.start(uri.host, uri.port) do |http|
+  http.request request # Net::HTTPResponse object
+end
+
+statistics = res.body.force_encoding("UTF-8")
 
 statistics.gsub!(/left/,'right')
 statistics.gsub!(/(<pre>|<\/pre>)/,'')
