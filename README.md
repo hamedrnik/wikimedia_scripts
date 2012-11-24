@@ -7,12 +7,13 @@ These scripts update the persian page of wikis stats in wikimedia.
 * mediawiki-gateway
 * language_name.rb
 
+== How to install
+    $ bundle install
+
 == How to run
-run below command in bash:
+    $ update_*_stat.rb -n 'USERNAME' -p 'PASSWORD' -u http://meta.wikimedia.org/w/api.php
 
- $ update_*_stat.rb -n 'USERNAME' -p 'PASSWORD' -u http://meta.wikimedia.org/w/api.php
-
-**note: The asterisk mark could be the following:
+* note: The asterisk mark could be the following:
  # wikibooks
  # wikimedia
  # wikinews
@@ -21,8 +22,9 @@ run below command in bash:
  # wikisource
  # wiktionary
 
+* note: USERNAME and PASSWORD must be your username and password of wikimedia project.
 
-## LICENSE
+== LICENSE
 Scripts that help to improve wikimedia projects such as wikipedia, wiktionary and etc.
     Copyright (C) 2012  Hamed Ramezanian
 
