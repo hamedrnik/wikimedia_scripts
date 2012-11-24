@@ -1,30 +1,29 @@
-= update_*_stat.rb
+# update_*_stat.rb
 These scripts update the persian page of wikis stats in wikimedia.
 
-== Requirements
+## Requirements
 * ruby
 * rubygems
 * mediawiki-gateway
 * language_name.rb
 
-== How to install
+## How to install
     $ bundle install
 
-== How to run
+## How to run
     $ update_*_stat.rb -n 'USERNAME' -p 'PASSWORD' -u http://meta.wikimedia.org/w/api.php
 
 * note: The asterisk mark could be the following:
- # wikibooks
- # wikimedia
- # wikinews
- # wikipedia
- # wikiquote
- # wikisource
- # wiktionary
-
+ - wikibooks
+ - wikimedia
+ - wikinews
+ - wikipedia
+ - wikiquote
+ - wikisource
+ - wiktionary
 * note: USERNAME and PASSWORD must be your username and password of wikimedia project.
 
-== LICENSE
+## LICENSE
 Scripts that help to improve wikimedia projects such as wikipedia, wiktionary and etc.
     Copyright (C) 2012  Hamed Ramezanian
 
