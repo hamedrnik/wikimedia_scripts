@@ -2,6 +2,7 @@
 #encoding: utf-8
 
 if RUBY_VERSION.to_f < 1.9
+  require 'force_encoding'
   require 'jcode'
   $KCODE = 'u'
 end
