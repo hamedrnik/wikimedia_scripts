@@ -1,6 +1,11 @@
 #!/usr/bin/env ruby
 #encoding: utf-8
 
+if RUBY_VERSION.to_f < 1.9
+  require 'jcode'
+  $KCODE = 'u'
+end
+
 require 'net/http'
 require 'rubygems'
 require 'media_wiki'

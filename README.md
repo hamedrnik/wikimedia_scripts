@@ -2,7 +2,7 @@
 These scripts update the persian page of wikis stats in wikimedia.
 
 ## Requirements
-* ruby >= 1.9
+* ruby >= 1.8
 * rubygems
 * mediawiki-gateway
 * language_name.rb

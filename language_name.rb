@@ -1,5 +1,10 @@
 #encoding: utf-8
 
+if RUBY_VERSION.to_f < 1.9
+  require 'jcode'
+  $KCODE = 'u'
+end
+
 def gsub_english_name_to_persian(s)
   s.gsub!(/\[\[w:(English language\|English)\]\]/i, '[[w:fa:زبان انگلیسی|انگلیسی]]')
   s.gsub!(/\[\[w:(German language\|German)\]\]/i, '[[w:fa:زبان آلمانی|آلمانی]]')
