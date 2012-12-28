@@ -2,7 +2,7 @@
 #encoding: utf-8
 
 if RUBY_VERSION.to_f < 1.9
-  require 'force_encoding'
+  require File.expand_path('../force_encoding', __FILE__)
   require 'jcode'
   $KCODE = 'u'
 end
