@@ -49,4 +49,4 @@ config = MediaWiki::Config.new ARGV
 
 mw = MediaWiki::Gateway.new(config.url)
 mw.login(config.user, config.pw)
-mw.create 'فهرست پروژه‌های ویکی‌مدیا براساس اندازه/جدول', statistics, :summary => "bot: update stats", :overwrite => true
+mw.create 'List of Wikimedia projects by size/Table/fa', statistics, :summary => "bot: update stats", :overwrite => true

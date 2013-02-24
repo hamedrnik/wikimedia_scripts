@@ -50,4 +50,4 @@ config = MediaWiki::Config.new ARGV
 
 mw = MediaWiki::Gateway.new(config.url)
 mw.login(config.user, config.pw)
-mw.create 'ویکی‌نسک/جدول', statistics, :summary => "bot: update stats", :overwrite => true
+mw.create 'Wikibooks/Table/fa', statistics, :summary => "bot: update stats", :overwrite => true
