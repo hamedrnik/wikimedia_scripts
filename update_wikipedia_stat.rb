@@ -49,6 +49,7 @@ statistics.gsub!(/! Active Users/,'! کاربرهای فعال')
 statistics.gsub!(/! Images/,'! تصویرها')
 statistics.gsub!(/! Depth/,'! ژرفا')
 statistics.gsub!(/(\d) (\d)/,'\1,\2')
+statistics.gsub!(/(\| class=\"plainlinksneverexpand\")/, "\n" + '\1')
 
 #convert english name to persian and link to fa wikipedia
 gsub_english_name_to_persian(statistics)
