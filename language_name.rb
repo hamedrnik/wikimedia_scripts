@@ -225,4 +225,5 @@ def gsub_english_name_to_persian(s)
   s.gsub!(/\[\[w:(Shona language\|Shona)\]\]/i, '[[w:fa:زبان شونا|شونا]]')
   s.gsub!(/\[\[w:(Banjar language\|Banjar)\]\]/i, '[[w:fa:زبان بانجاری|بانجاری]]')
   s.gsub!(/\[\[w:(Tsonga language\|Tsonga)\]\]/i, '[[w:fa:زبان شنگانی|شنگانی]]')
+  s.gsub!(/\[\[w:(Tarantino language\|Tarantino)\]\]/i, '[[w:fa:گویش تارانتینو|تارانتینو]]')
 end
