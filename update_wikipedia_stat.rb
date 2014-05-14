@@ -9,8 +9,7 @@ end
 
 require 'net/http'
 require 'rubygems'
-require 'bundler'
-Bundler.setup(:default)
+require 'bundler/setup'
 require 'media_wiki'
 require File.expand_path('../language_name', __FILE__)
 
