@@ -51,6 +51,7 @@ gsub_english_name_to_persian(statistics)
 #puts statistics
 config = MediaWiki::Config.new ARGV
 
-mw = MediaWiki::Gateway.new(config.url)
+mw = MediaWiki::Gateway.new(config.url, ignorewarnings: true)
 mw.login(config.user, config.pw)
-mw.create 'Wiktionary/Table/fa', statistics, :summary => "bot: update stats", :overwrite => true
+mw.create 'Wiktionary/Table/fa', statistics,
+  summary: "bot: update stats", overwrite: true
