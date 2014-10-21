@@ -302,4 +302,5 @@ def gsub_english_name_to_persian(s)
   s.gsub!(/\[\[w:(Fula language\|Fula)\]\]/i, '[[w:fa:زبان فولا|فولا]]')
   s.gsub!(/\[\[w:(Choctaw language\|Choctaw)\]\]/i, '[[w:fa:زبان چاکتاوی|چاکتاوی]]')
   s.gsub!(/\[\[w:(Hiri Motu language\|Hiri Motu)\]\]/i, '[[w:fa:زبان هیری موتو|هیری موتو]]')
+  s.gsub!(/\[\[w:(Ligurian language\|Ligurian)\]\]/i, '[[w:fa:زبان لیگوری|لیگوری]]')
 end
