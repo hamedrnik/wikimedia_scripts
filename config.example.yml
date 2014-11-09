@@ -1,0 +1,4 @@
+wiki:
+  user: YOUR_USERNAME
+  password: YOUR_PASSWORD
+  url: https://meta.wikimedia.org/w/api.php

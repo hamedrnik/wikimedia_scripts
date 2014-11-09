@@ -2,16 +2,20 @@
 These scripts update the persian page of wikis stats in wikimedia.
 
 ## Requirements
-* ruby >= 1.8
+* ruby >= 1.9.3
 * rubygems
 * mediawiki-gateway
+* unicode
 * language_name.rb
 
 ## How to install
     $ bundle install
+## How to config
+Rename config.example.yml to config.yml and set your username and password.
+* note: USERNAME and PASSWORD must be your username and password of wikimedia project.
 
 ## How to run
-    $ update_*_stat.rb -n 'USERNAME' -p 'PASSWORD' -u http://meta.wikimedia.org/w/api.php
+    $ update_*_stat.rb
 
 * note: The asterisk mark could be the following:
  - wikibooks
@@ -21,11 +25,11 @@ These scripts update the persian page of wikis stats in wikimedia.
  - wikiquote
  - wikisource
  - wiktionary
-* note: USERNAME and PASSWORD must be your username and password of wikimedia project.
+
 
 ## LICENSE
 Scripts that help to improve wikimedia projects such as wikipedia, wiktionary and etc.
-    Copyright (C) 2012  Hamed Ramezanian
+    Copyright (C) 2014  Hamed Ramezanian
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

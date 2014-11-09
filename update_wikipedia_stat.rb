@@ -11,6 +11,7 @@ require 'net/http'
 require 'rubygems'
 require 'bundler/setup'
 require 'media_wiki'
+require 'yaml'
 require File.expand_path('../language_name', __FILE__)
 
 headers =  {
@@ -56,9 +57,9 @@ statistics.gsub!(/(\| class=\"plainlinksneverexpand\")/, "\n" + '\1')
 gsub_english_name_to_persian(statistics)
 
 #puts statistics
-config = MediaWiki::Config.new ARGV
+config = YAML.load_file(File.expand_path('../config.yml', __FILE__))
 
-mw = MediaWiki::Gateway.new(config.url, ignorewarnings: true)
-mw.login(config.user, config.pw)
+mw = MediaWiki::Gateway.new(config["wiki"]["url"], :ignorewarnings => true)
+mw.login(config["wiki"]["user"], config["wiki"]["password"])
 mw.create 'List of Wikipedias/Table/fa', statistics,
-  summary: "bot: update stats", overwrite: true, ignorewarnings: true
+  summary: "bot: update stats", overwrite: true
